@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>calculator</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="calculator">
+        <input type="text" class="display" id="display" disabled>
+        <div id="liveResult"></div>
+        <div class="buttons">
+            <button class="clear" onclick="clearDisplay()">C</button>
+            <button onclick="deleteLast()"><i class="fa-solid fa-delete-left"></i></button>
+            <button onclick="appenfvalue('00')">00</button>
+            <button onclick="appenfvalue('0')">0</button>
+            <button class="operator" onclick="appenfvalue('+')"><i class="fa-solid fa-plus"></i></button>
+            <button onclick="appenfvalue('7')">7</button>
+            <button onclick="appenfvalue('8')">8</button>
+            <button onclick="appenfvalue('9')">9</button>
+            <button class="operator" onclick="appenfvalue('-')"><i class="fa-solid fa-minus"></i></button>
+            <button onclick="appenfvalue('4')">4</button>
+            <button onclick="appenfvalue('5')">5</button>
+            <button onclick="appenfvalue('6')">6</button>
+            <button class="operator" onclick="appenfvalue('*')"><i class="fa-solid fa-xmark"></i></button>
+            <button onclick="appenfvalue('1')">1</button>
+            <button onclick="appenfvalue('2')">2</button>
+            <button onclick="appenfvalue('3')">3</button>
+            <button class="operator" onclick="appenfvalue('/')"><i class="fa-solid fa-divide"></i></button>
+            <button onclick="appenfvalue('.')">.</button>
+            <button class="equal" onclick="calculate()"><i class="fa-solid fa-equals"></i></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
